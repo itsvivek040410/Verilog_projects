@@ -1,7 +1,8 @@
+# 🔧 Verilog Projects – Digital System Design in Vivado
 
-# 🔧 Verilog Projects – Digital System Design with Simulation Results
+Welcome to my Verilog HDL (Hardware Description Language) project repository! This collection showcases my digital system design work, developed and verified using **Xilinx Vivado**. Each project includes clean, modular Verilog code focused on real-world digital logic components.
 
-Welcome to my Verilog HDL (Hardware Description Language) project repository! This collection showcases my digital design skills through a variety of hardware-level simulations, complete with testbenches and waveform outputs using tools like **Vivado**
+---
 
 ## 📁 Repository Structure
 verilog-projects/
@@ -9,29 +10,46 @@ verilog-projects/
 ├── voting-machine/       # Voting machine using debouncing and mode control
 │   ├── src/              # Verilog source code
 │   ├── tb/               # Testbenches
-|   ├── result/           # result  pic , schematic 
+│   ├── Result/           # schematic,waveform
+│
+|   ├── RAM&ROM/          # Single port RAM using clocked synchronous design,Dual port RAM for simultaneous read/write, Read-only memory (ROM)
+│   ├── src/              # Verilog source code
+│   ├── tb/               # Testbenches
+│   ├── Result/           # schematic,waveform
+├── README.md             # Project documentation
 
-## ✅ Completed Project: Voting Machine
 
-### 📌 Overview
-A Verilog-based voting system that includes:
-- Debounced button control                    
-- Vote logging for 4 candidates
-- Mode switching for voting vs. result display
-- LED output to indicate status or vote count
+## ✅ Completed Projects
 
-### 🧪 Testbench
-Includes a full testbench (`ts.v`) that simulates:
-- Vote casting by multiple button presses
-- Mode switching
-- Visual output on LEDs
+### 🗳️ Voting Machine
+A Verilog-based voting system with:
+- **Debounced button control**
+- **Vote tracking for 4 candidates**
+- **Mode switching between vote and result display**
+- **LED output for candidate vote counts**
+
+### 💾 Single-Port RAM
+- Synchronous single-port RAM (64 x 8-bit)
+- One write or read per clock cycle
+- Uses address register to hold the read address
+- Clean and testable memory block
+
+### 🔄 Dual-Port RAM
+- Allows simultaneous read and write from different addresses
+- Ideal for CPU-memory interactions or parallel systems
+- Fully synchronous on both ports
+
+### 📖 ROM (Read-Only Memory)
+- Verilog ROM design using case statements or initial block
+- Preloaded data for lookup tables or fixed instructions
+- Can be extended for font data, instruction memory, etc.
 
 
 ## 📌 Author
 
-**Vivek Bansal**
-Electronics and Communication Engineering
-Thapar Institute of Engineering & Technology
+**Vivek Bansal**  
+Electronics and Communication Engineering  
+Thapar Institute of Engineering & Technology  
 
 > Passionate about digital hardware, embedded systems, and building intelligent control systems.
 
@@ -39,4 +57,3 @@ Thapar Institute of Engineering & Technology
 ## 📜 License
 
 This repository is open-source and available under the MIT License. Use, modify, or contribute freely.
-
