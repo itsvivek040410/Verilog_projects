@@ -1,7 +1,7 @@
 
 # 🔧 Verilog Projects – Digital System Design with Simulation Results
 
-Welcome to my Verilog HDL (Hardware Description Language) project repository! This collection showcases my digital design skills through a variety of hardware-level simulations, complete with testbenches and waveform outputs using tools like **Icarus Verilog** and **GTKWave**.
+Welcome to my Verilog HDL (Hardware Description Language) project repository! This collection showcases my digital design skills through a variety of hardware-level simulations, complete with testbenches and waveform outputs using tools like **Vivado**
 
 ## 📁 Repository Structure
 verilog-projects/
